@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'robot', sans-serif;
+    background-color: rgb(17, 16, 16);
+    color: white;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 22px;
+    background-color: rgb(17, 16, 16);
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 7;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    margin-inline: 22px;
+    font-weight: 600;
+}
+
+ul li a:hover {
+    color: rgb(12, 12, 206);
+    border-bottom: 2px solid rgb(12, 12, 206);
+}
+
+#bar {
+    display: none;
+}
+
+.logo {
+    font-size: 22px;
+}
+
+.logo span {
+    color: rgb(12, 12, 206);
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 105px;
+    align-items: center;
+}
+
+.main img {
+    height: 400px;
+}
+
+.mainText {
+
+    margin-left: -32px;
+
+
+}
+
+.mainText h1 {
+    font-size: 50px;
+}
+
+.mainText h1 span {
+    color: rgb(12, 12, 206);
+}
+
+.mainText #animate {
+    width: 400px;
+    height: 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    color: white;
+
+}
+
+.mainText button {
+    width: 140px;
+    height: 45px;
+    background-color: rgb(12, 12, 206);
+    margin-top: 10px;
+    color: white;
+    border: 2px solid rgb(12, 12, 206);
+}
+
+.mainText button:hover {
+    background: transparent;
+    cursor: pointer;
+}
+
+/* About-Section */
+.head {
+    text-align: center;
+    padding: 80px;
+}
+
+.head span {
+    color: rgb(12, 12, 206);
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(28, 25, 25);
+    align-items: center;
+    padding: 52px;
+}
+
+.about img {
+    width: 250px;
+    border-radius: 50%;
+    border: 4px solid rgb(12, 12, 206);
+    margin-inline: 65px;
+}
+
+.aboutText p {
+    margin-top: 22px;
+}
+
+.aboutText h2 span {
+    color: rgb(12, 12, 206);
+}
+
+.aboutText p span {
+    color: rgb(218, 218, 218);
+}
+
+.aboutText h2 {
+    font-size: 30px;
+}
+
+/* Services */
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 250px;
+    padding: 22px;
+    background-color: rgb(28, 25, 25);
+    margin-inline: 20px;
+    border-radius: 5px;
+}
+
+.card p {
+    margin-top: 11px;
+}
+
+.card i {
+    font-size: 22px;
+}
+
+/* My Work */
+.myworks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.workcard {
+    width: 300px;
+    height: 310px;
+    background-color: rgb(28, 25, 25);
+    border-radius: 5px;
+    margin-inline: 20px;
+    padding: 11px;
+}
+
+.workcard img {
+    width: 100%;
+    height: 200px;
+}
+
+.workcard p {
+    margin-top: 11px;
+}
+
+.workcard a {
+    text-decoration: none;
+    position: absolute;
+    margin-top: 20px;
+    padding: 6px 12px;
+    background-color: rgb(12, 12, 206);
+    color: white;
+}
+
+.Checkout {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Contact-section */
+.contact {
+    width: 300px;
+    padding: 22px;
+    background-color: rgb(28, 25, 25);
+    margin: auto;
+}
+
+.contact input {
+    width: 90%;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    margin-top: 3px;
+
+}
+
+.contact p {
+    margin-top: 18px;
+}
+
+.contact button {
+    width: 90%;
+    height: 35px;
+    background-color: rgb(12, 12, 206);
+    color: white;
+    margin-top: 20px;
+    border: 2px solid rgb(12, 12, 206);
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: transparent;
+}
+
+/* Footer-section */
+.footer {
+    display: flex;
+
+    justify-content: space-around;
+    padding: 55px;
+    margin-top: 66px;
+    background-color: rgb(28, 25, 25);
+}
+
+.footer p {
+    margin-top: 12px;
+}
+
+/* Media-Query */
+@media screen and (max-width:900px) {
+    .main {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:800px) {
+    ul {
+        display: none;
+    }
+
+    .showData {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+        background-color: rgb(28, 25, 25);
+        gap: 20px;
+        border-radius: 5px;
+        position: fixed;
+        top: 75px;
+        right: 8%;
+    }
+
+    #bar {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .mainText {
+        text-align: center;
+    }
+
+    .footer {
+        margin-inline: 3px;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .mainText h1 {
+        font-size: 45px;
+    }
+
+    .mainText p {
+        font-size: 25px;
+        margin-top: 8px;
+    }
+
+    .footer p {
+        font-size: 12px;
+        margin-inline: 8px;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .aboutText {
+        font-size: 14px;
+    }
+
+    .aboutText h2 {
+        margin-top: 20px;
+    }
+
+    .mainText {
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .footer p {
+        font-size: 12px;
+    }
+
+    .footer h3 {
+        font-size: 15px;
+        margin-inline: 5px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .Checkout {
+        flex-wrap: nowrap;
+    }
+
+    .service {
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .Checkout {
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width:412px) {
+    .Checkout {
+        flex-wrap: wrap;
+
+    }
+
+    .workcard {
+        margin-top: 20px;
+    }
+
+    .service {
+        flex-wrap: wrap;
+    }
+
+    .mainText {
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .Checkout {
+        flex-wrap: wrap;
+
+    }
+
+    .service {
+        flex-wrap: wrap;
+    }
+
+    .workcard {
+        margin-top: 20px;
+    }
+
+    .mainText {
+        margin-left: 5px;
+    }
+}
